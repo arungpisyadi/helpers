@@ -1,51 +1,50 @@
 {
-  "name": "milebits/helpers",
-  "description": "A new laravel package including helper functions for every Milebits package.",
-  "type": "library",
-  "license": "proprietary",
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true
-  },
-  "authors": [
-    {
-      "name": "Hicham SADDEK",
-      "email": "h.saddek@serrahub.com",
-      "homepage": "https://linkedin.com/in/hicham-saddek",
-      "role": "Lead Developer"
+    "name": "milebits/helpers",
+    "description": "A new laravel package including helper functions for every Milebits package.",
+    "type": "library",
+    "license": "proprietary",
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
     },
-    {
-      "name": "Milebits Systems",
-      "email": "support@milebits.com",
-      "homepage": "https://os.milebits.com",
-      "role": "Project Manager"
-    }
-  ],
-  "require": {
-    "php": ">=8.0",
-    "laravel/framework": "^6|^7|^8"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^6.12",
-    "phpunit/phpunit": "^9.5"
-  },
-  "prefer-stable": true,
-  "minimum-stability": "dev",
-  "support": {
-    "email": "support@os.milebits.com"
-  },
-  "autoload": {
-    "files": [
-      "src/Helpers/functions.php"
+    "authors": [{
+            "name": "Hicham SADDEK",
+            "email": "h.saddek@serrahub.com",
+            "homepage": "https://linkedin.com/in/hicham-saddek",
+            "role": "Lead Developer"
+        },
+        {
+            "name": "Milebits Systems",
+            "email": "support@milebits.com",
+            "homepage": "https://os.milebits.com",
+            "role": "Project Manager"
+        }
     ],
-    "psr-4": {
-      "Milebits\\Helpers\\": "src/"
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "^6|^7|^8"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "support": {
+        "email": "support@os.milebits.com"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/functions.php"
+        ],
+        "psr-4": {
+            "Milebits\\Helpers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Milebits\\Helpers\\Tests\\": "tests/"
+        }
     }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Milebits\\Helpers\\Tests\\": "tests/"
-    }
-  }
 }
